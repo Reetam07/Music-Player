@@ -1,4 +1,4 @@
-console.log("Welcome to My Website");
+console.log("Welcome to Spotify");
 
 // Initialize the Variables
 let songIndex = 0;
@@ -10,26 +10,16 @@ let masterSongName = document.getElementById('masterSongName');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 
 let songs = [
-    {songName: "01. Bariye dao tomar haath", filePath: "songs/1.mp3"},
-    {songName: "02. Amake amar moto thakte dao", filePath: "songs/2.mp3"},
-    {songName: "03. Jawl phoring", filePath: "songs/3.mp3"},
-    {songName: "04. Faka frame", filePath: "songs/4.mp3"},
-    {songName: "05. Ghorbari", filePath: "songs/5.mp3"},
-    {songName: "06. Ekhon onek raat", filePath: "songs/6.mp3"},
-    {songName: "07. Bondhu chol", filePath: "songs/7.mp3"},
-    {songName: "08. Beche thaakar gaan", filePath: "songs/8.mp3"},
-    {songName: "09. Boba tunnel", filePath: "songs/9.mp3"},
-    {songName: "10. Sohage adore", filePath: "songs/10.mp3"},
-    {songName: "11. Katakuti Khela", filePath: "songs/11.mp3"},
-    {songName: "12. Protidin", filePath: "songs/12.mp3"},
-    {songName: "13. Ekbar bol", filePath: "songs/13.mp3"},
-    {songName: "14. Tumi jake bhablobasho", filePath: "songs/14.mp3"},
-    {songName: "15. Chaka", filePath: "songs/15.mp3"},
-    {songName: "16. Lokkhhiti", filePath: "songs/16.mp3"},
-    {songName: "17. Shilalipi Bhalobasha", filePath: "songs/17.mp3"},
-    {songName: "18. Obhabe Kano", filePath: "songs/18.mp3"},
-    {songName: "19. Je kota din", filePath: "songs/19.mp3"},
-    {songName: "20. Toy train", filePath: "songs/20.mp3"},
+    {songName: "Baria Dao", filePath: "songs/1.mp3", coverPath: "covers/1.jpg"},
+    {songName: "Amake Amara Moto", filePath: "songs/2.mp3", coverPath: "covers/2.jpg"},
+    {songName: "Jawl Phoring 2.0", filePath: "songs/3.mp3", coverPath: "covers/3.jpg"},
+    {songName: "Phanka Frame", filePath: "songs/4.mp3", coverPath: "covers/4.jpg"},
+    {songName: "Ghar Bari", filePath: "songs/5.mp3", coverPath: "covers/5.jpg"},
+    {songName: "Ekhon Onek Raat", filePath: "songs/2.mp3", coverPath: "covers/6.jpg"},
+    {songName: "Bandhu Chol", filePath: "songs/2.mp3", coverPath: "covers/7.jpg"},
+    {songName: "Benche Thakar Gaan", filePath: "songs/2.mp3", coverPath: "covers/8.jpg"},
+    {songName: "Boba Tunnel", filePath: "songs/2.mp3", coverPath: "covers/9.jpg"},
+    {songName: "Shohage Adore", filePath: "songs/4.mp3", coverPath: "covers/10.jpg"},
 ]
 
 songItems.forEach((element, i)=>{ 
@@ -86,7 +76,6 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
         masterPlay.classList.add('fa-pause-circle');
     })
 })
-
 
 document.getElementById('next').addEventListener('click', ()=>{
     if(songIndex>=9){
